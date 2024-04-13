@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .user-container{
+         width: 100%;
+         padding: 12px ;
+         box-sizing: border-box;
+         background-color: antiquewhite;
+         border-radius: 4px;
+         border: 1px solid white;
+        }
+        .user-container:invalid{
+            background-color: lightgrey;
+        }
+        .button{
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            
+        }
+        .button:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <form action="url" method="post">
+    <fieldset>
+        <div><label for="">username:</label>
+            <input type="text" class="user-container" required minlength="4"></div> 
+            <div>password<input type="password" class="user-container" required minlength="4"></div>
+            <div><button>login</button></div>
+            <div><button class="button">submit</button></div>
+            <div>reminder me <input type="checkbox"></div>
+           
+    </fieldset>
+</form>
+    <div>address<textarea name="addres" id="address" cols="20" rows="5"></textarea></div>
+    <div>
+            state <select name="" id="">
+                <option value="">kerala</option>
+                <option value="">tamil nadu</option>
+                <option value="">karnataka</option>
+            </select>
+        </div>
+        <div>
+         <label for="">gender</label>
+         female:<input type="radio" id="male" name="gender" value="female">
+         male:<input type="radio" id="male" name="gender" value="male">
+        </div>
+</body>
+</html>
